@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styles from './index.module.scss'
 import InstructionButtons from '../../components/pages/Home/InstructionButtons'
 
-export default function HomePage() {
+export default function Home() {
     const [tab, setTab] = useState('effect')
 
     return (

@@ -10,7 +10,7 @@ export default function Profile() {
                     <div className={`${styles.profile_section_bg} ${styles.center}`}>
                         <div className={`${styles.profile_section_bg_img} ${styles.center}`}>
                             <div className={styles.avatar}>
-                                <img src='/img/button.png' alt="" />
+                                <img src='/img/cybercat.jpg' alt="" />
                             </div>
                         </div>
                         <div className={`${styles.profile_section_bg_name} ${styles.center}`}>
@@ -24,6 +24,16 @@ export default function Profile() {
                             </div>
                         </div>
 
+                    </div>
+                    <div className={styles.profile_section_order}>
+                        <div className={styles.story}>
+                            <h3>История заказов</h3>
+                        </div>
+                        <div className={styles.order_list}>
+                            <div className={styles.order_list_check}>
+                                <p>1</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

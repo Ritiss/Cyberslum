@@ -15,7 +15,12 @@ export default function Footer() {
     return (
         <footer>
             <section>
-                <span style={{color: '#fff'}}>{now.toLocaleTimeString()}</span>
+                <span style={{ color: '#fff' }}>{now.toLocaleTimeString()}</span>
+                <p className={styles.copy}>
+                    <span className={styles.copy_sign}>©</span>
+                    <span> 2024 Cyberslum</span>
+                </p>
+                <p>Ritis</p>
             </section>
         </footer>
     )

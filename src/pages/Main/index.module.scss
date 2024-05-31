@@ -1,17 +1,8 @@
 @import '../../style/colors.scss';
+@import '../../style/global.scss';
 @import '../../style/neon.scss';
 @import '../../style/animation.scss';
 
-.canvas,
-.layer,
-.navigation,
-.layer_content,
-.neon,
-.neon_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .header {
     .navigation {
@@ -47,6 +38,9 @@
         left: 0;
         height: 100vh;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-position: center;
         background-size: cover;
         pointer-events: none;

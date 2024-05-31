@@ -1,3 +1,5 @@
+@import '../../../style/colors.scss';
+
 footer {
     height: 300px;
     width: 100%;
@@ -6,5 +8,11 @@ footer {
     flex-direction: column;
     justify-content: center;
 
-    background: #07080d;
+    background: $dark;
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
 }

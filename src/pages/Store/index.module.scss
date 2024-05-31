@@ -1,0 +1,14 @@
+@import '../../style/colors.scss';
+@import '../../style/global.scss';
+
+.store {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .8);
+
+    &_bg {
+        width: 100%;
+        margin-top: 80px;
+        background: red;
+    }
+}

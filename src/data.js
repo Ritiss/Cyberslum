@@ -56,11 +56,11 @@ export const CellsFirst = [
   },
   {
       text: 'Руки',
-      link: '/home'
+      link: '/store'
   },
   {
       text: 'Скелет',
-      link: '/home'
+      link: '/store'
   },
   {
       text: 'Нервная система',
@@ -68,30 +68,30 @@ export const CellsFirst = [
   },
   {
       text: 'Кожа',
-      link: '/home'
+      link: '/store'
   }
 ]
 
 export const CellsSecond = [
   {
       text: 'Операционная система',
-      link: '/home'
+      link: 'store'
   },
   {
       text: 'Лицо',
-      link: '/home'
+      link: '/store'
   },
   {
       text: 'Ладони',
-      link: '/home'
+      link: '/store'
   },
   {
       text: 'Кровеносная система',
-      link: '/home'
+      link: '/store'
   },
   {
       text: 'Ноги',
-      link: '/home'
+      link: '/store'
   }
 ]
 

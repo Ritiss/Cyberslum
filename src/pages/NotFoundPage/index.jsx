@@ -10,7 +10,7 @@ export default function NotFoundPage() {
                     <h3>Error</h3>
                     <h4>404</h4>
                     <Link to='/home' className={styles.link}>
-                        Вернуться на домашнюю страницу
+                        {'<-'} Вернуться на домашнюю страницу
                     </Link>
                 </div>
             </div>

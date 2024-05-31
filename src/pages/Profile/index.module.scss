@@ -10,15 +10,16 @@
         width: 30%;
         border-radius: 20px;
         flex-direction: column;
-        background: #07080d;
+        background: #0f111c;
 
         h3 {
+            margin-top: 40px;
             font-size: 30px;
             color: #fff;
         }
 
         &_bg {
-            height: 300px;
+            height: 40%;
             width: 100%;
             padding: 0 30px 0 30px;
 
@@ -29,7 +30,6 @@
                 .avatar {
                     height: 150px;
                     width: 150px;
-                    border: 3px solid $pink;
                     border-radius: 50%;
                     overflow: hidden;
 
@@ -74,6 +74,31 @@
                 // .email {
 
                 // }
+            }
+        }
+
+        &_order {
+            height: 60%;
+            width: 100%;
+            padding: 0 30px 0 30px;
+
+            .story {
+                margin-bottom: 20px;
+
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #bbbbbb;
+                }
+            }
+
+            .order_list {
+                height: 100%;
+
+                &_check {
+                    background: $dark;
+                }
             }
         }
     }
