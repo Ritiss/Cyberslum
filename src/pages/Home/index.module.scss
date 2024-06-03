@@ -76,7 +76,7 @@
     height: 1200px;
     background: rgba(0, 0, 0, .8) no-repeat;
     background-image: url('/img/back.png'), url('/img/bg.png');
-    background-size: contain, cover;
+    background-size: cover;
     background-position: top, 0 500px;
     color: #fff;
 
@@ -98,14 +98,17 @@
                 letter-spacing: 2px;
                 color: $pink;
                 user-select: none;
+                text-shadow: 1px 1px 2px rgba(253, 88, 178, .4), 0 0 1em rgba(95, 243, 251, .4), 0 0 0.2em rgba(253, 88, 178, .4);
+                animation: broken 4s infinite;
             }
 
             p {
                 margin-bottom: 10px;
-                text-align: center;
+                text-align: justify;
                 font-size: 26px;
 
                 span {
+                    text-shadow: 0 0 1em rgba(95, 243, 251, .4);
                     color: $blue;
                 }
             }
@@ -122,10 +125,22 @@
         &_section {
             height: 700px;
             width: 100%;
-            background: #292929;
 
             .instruction_description {
+                min-height: 100%;
                 width: 65%;
+                align-items: flex-end;
+                justify-content: flex-start;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                &_text {
+                    padding-left: 60px;
+                    padding-bottom: 40px;
+                    width: 50%;
+                    font-size: 26px;
+                    text-align: start;
+                }
             }
 
             .instruction_buttons {
@@ -137,13 +152,33 @@
                     width: 80%;
                     flex-direction: column;
 
+                    .buttons_block {
+                        padding-bottom: 60px;
+                        height: 70%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        button {
+                            cursor: pointer;
+                            width: 100%;
+                            border: none;
+                            background: none;
+
+                            text-align: end;
+                            font-size: 40px;
+                            color: #fff;
+                        }
+                    }
+
                     .brifing_section {
                         height: 30%;
                         width: 100%;
                         justify-content: end;
 
                         h3 {
-                            font-size: 80px;
+                            font-size: 86px;
                             text-transform: uppercase;
 
                             color: #fff;

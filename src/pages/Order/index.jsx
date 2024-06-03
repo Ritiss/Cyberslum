@@ -1,11 +1,49 @@
+import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 import styles from './index.module.scss'
-
+import { createTransaction } from '../../services/Transactions'
+import { useSelector } from 'react-redux'
 export default function Order() {
+    const [reason, setReason] = useState('tver')
+    const profile = useSelector((state) => state.userInfo.profile) ?? {}
+
+    const handleOrder = () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || []
+        const items = cart.map(item => item.id)
+        const payload = {
+            user_id: profile.userId,
+            status: "В обработке",
+            items: items
+        }
+
+        createTransaction(payload)
+    }
+
+    const [isPlaying, setIsPlaying] = useState(() => {
+        const saved = localStorage.getItem('isMusicMuted')
+        return saved ? JSON.parse(saved) : false
+    })
+
+    const togglePlay = () => {
+        setIsPlaying(!isPlaying)
+    }
+
+    useEffect(() => {
+        const musicPlayer = document.getElementById('bgmusic')
+        isPlaying ? musicPlayer.play() : musicPlayer.pause()
+    }, [isPlaying])
+
+    useEffect(() => {
+        localStorage.setItem('isMusicMuted', JSON.stringify(isPlaying))
+    }, [isPlaying])
+
     return (
         <>
             <div className={`${styles.order} ${styles.center}`}>
-                <video src={`/videos/apartment.mp4`} className={styles.video_bg} autoPlay loop muted />
+                <section className={`${styles.order_header} ${styles.center}`}>
+                    <Link to="/"><img src='/img/logo.png' alt="" /></Link>
+                    <img src={isPlaying ? '/svg/music_on.svg' : '/svg/music_off.svg'} alt="" className={styles.musicButton} onClick={togglePlay} />
+                </section>
                 <section className={`${styles.order_bg} ${styles.center}`}>
                     <div className={`${styles.order_bg_profile} ${styles.order_bg_cont}`}>
                         <div className={`${styles.bg_number} ${styles.center}`}>
@@ -23,14 +61,14 @@ export default function Order() {
                                         </div>
                                     </div>
                                     <div className={`${styles.name} ${styles.center}`}>
-                                        <p>Артемидьян</p>
+                                        <p>{profile.name}</p>
                                     </div>
                                 </div>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={`${styles.order_bg_address} ${styles.order_bg_cont}`}>
+                    <div className={`${styles.order_bg_adress} ${styles.order_bg_cont}`}>
                         <div className={`${styles.bg_number} ${styles.center}`}>
                             <div className={`${styles.step_number} ${styles.center}`}>
                                 <p>2</p>
@@ -38,13 +76,15 @@ export default function Order() {
                             <h3>Адрес получения</h3>
                         </div>
                         <div className={`${styles.bg_cont} ${styles.center}`}>
-                            <div>
-                                <a href="">Адрес</a>
+                            <div className={`${styles.adress_link} ${styles.center}`}>
+                                <a href="">{reason}</a>
                             </div>
                             <label htmlFor="adress"></label>
                             <select
                                 id="adress"
                                 className="control"
+                                value={reason}
+                                onChange={(event) => setReason(event.target.value)}
                             >
                                 <option value="moscow">г. Москва</option>
                                 <option value="tver">г. Тверь</option>
@@ -90,12 +130,12 @@ export default function Order() {
                     </div>
 
                     <div className={`${styles.order_bg_button} ${styles.order_bg_cont}`}>
-                        <Link className={styles.neon_button}>
+                        <button className={styles.neon_button} onClick={handleOrder}>
                             <span className={styles.letter_broken_first}>О</span>
                             <span className={styles.flash}>форм</span>
                             <span className={styles.letter_broken}>и</span>
                             <span className={styles.flash}>ть</span>
-                        </Link>
+                        </button>
                     </div>
                 </section>
             </div>

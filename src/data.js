@@ -1,30 +1,52 @@
+export const MainNavigation = [
+  {
+    name: '/svg/store.svg',
+    link: '/catalog',
+    title: 'Каталог'
+  },
+  {
+    name: '/svg/cart.svg',
+    link: '/cart',
+    title: 'Корзина'
+  }
+]
+
 export const HeaderNavigation = [
   // {
   //     name: 'Профиль',
   //     link: '/profile'
   // },
   {
-      name: 'Домашняя страница',
-      link: '/home'
+    name: 'Домашняя страница',
+    link: '/home'
   },
   {
-      name: 'Каталог',
-      link: '/catalog'
+    name: 'Каталог',
+    link: '/catalog'
   },
   {
-      name: 'Корзина',
-      link: '/cart'
+    name: 'Корзина',
+    link: '/cart'
   }
 ]
 
-export const introduction = {
-  сyberware:
-    'Киберимпланты. Аугментации. Хром. Класс специализированной кибернетической технологии, которая помещается в тело для выполнения определенной функции, тип биомеханических устройств, предназначенных для замены поврежденных и больных частей тела, улучшения его возможностей и силы, а также в некоторых случаях продления жизни.',
-  ripperdoc:
-    'Риперы — хирурги, медтехники, татуировщики и практикующие врачи-терапевты, специализирующиеся на установке киберимплантов и пластической хирургии. ',
-  сyberpsychosis:
-    'Киберпсихоз — диссоциативное расстройство личности, возникающее, когда человек с уже имеющимися психическими отклонениями ставит себе столько киберимплантов, что начинает считать себя или окружающих не полноценными разумными существами, а набором заменимых деталей. ',
-}
+export const introduction = [
+  {
+    type: 'сyberware',
+    desc: 'Киберимпланты. Аугментации. Хром. Класс специализированной кибернетической технологии, которая помещается в тело для выполнения определенной функции, тип биомеханических устройств, предназначенных для замены поврежденных и больных частей тела, улучшения его возможностей и силы, а также в некоторых случаях продления жизни.',
+    img: 'https://static.wikia.nocookie.net/cyberpunk/images/0/04/Cyberware_Spine_The_Diner_Trailer.png'
+  },
+  {
+    type: 'ripperdoc',
+    desc: 'Риперы — хирурги, медтехники, татуировщики и практикующие врачи-терапевты, специализирующиеся на установке киберимплантов и пластической хирургии.',
+    img: 'https://static.wikia.nocookie.net/cyberpunk/images/f/f9/Misc_Image_Beauty.jpg'
+  },
+  {
+    type: 'сyberpsychosis',
+    desc: 'Киберпсихоз — диссоциативное расстройство личности, возникающее, когда человек с уже имеющимися психическими отклонениями ставит себе столько киберимплантов, что начинает считать себя или окружающих не полноценными разумными существами, а набором заменимых деталей.',
+    img: 'https://static.wikia.nocookie.net/cyberpunk/images/6/66/Screenshot_013_CP2077PL.jpeg'
+  }
+]
 
 export const menu = [
   {
@@ -51,47 +73,57 @@ export const menu = [
 
 export const CellsFirst = [
   {
-      text: 'Лобная доля',
-      link: '/404'
+    type: 'frontal_cortex',
+    text: 'Лобная доля',
+    link: '/catalog/frontal_cortex'
   },
   {
-      text: 'Руки',
-      link: '/store'
+    type: 'arms',
+    text: 'Руки',
+    link: '/catalog/arms'
   },
   {
-      text: 'Скелет',
-      link: '/store'
+    type: 'skeleton',
+    text: 'Скелет',
+    link: '/catalog/skeleton'
   },
   {
-      text: 'Нервная система',
-      link: '/404'
+    type: 'nervous_system',
+    text: 'Нервная система',
+    link: '/catalog/nervous_system'
   },
   {
-      text: 'Кожа',
-      link: '/store'
+    type: 'integumentary_system',
+    text: 'Кожа',
+    link: '/catalog/integumentary_system'
   }
 ]
 
 export const CellsSecond = [
   {
-      text: 'Операционная система',
-      link: 'store'
+    type: 'operating_system',
+    text: 'Операционная система',
+    link: '/catalog/operating_system'
   },
   {
-      text: 'Лицо',
-      link: '/store'
+    type: 'face',
+    text: 'Лицо',
+    link: '/catalog/face'
   },
   {
-      text: 'Ладони',
-      link: '/store'
+    type: 'hands',
+    text: 'Ладони',
+    link: '/catalog/hands'
   },
   {
-      text: 'Кровеносная система',
-      link: '/store'
+    type: 'circulatory_system',
+    text: 'Кровеносная система',
+    link: '/catalog/circulatory_system'
   },
   {
-      text: 'Ноги',
-      link: '/store'
+    type: 'legs',
+    text: 'Ноги',
+    link: '/catalog/legs'
   }
 ]
 

@@ -9,7 +9,7 @@ export default function Inventory() {
                 <div className={`${styles.catalog_section} ${styles.center}`}>
                     <div className={`${styles.catalog_section_block} ${styles.center} ${styles.first}`}>
                         {CellsFirst.map(item => (
-                            <Link to={item.link} className={`${styles.cells} ${styles.center}`}>
+                            <Link key={item.text} to={item.link} className={`${styles.cells} ${styles.center}`}>
                                 <p>{item.text}</p>
                                 <div className={`${styles.cell} ${styles.center}`}>
                                     <p>+</p>
@@ -20,7 +20,7 @@ export default function Inventory() {
                     <Link to="/404" className={`${styles.catalog_section_block} ${styles.center} ${styles.second}`}></Link>
                     <div className={`${styles.catalog_section_block} ${styles.center} ${styles.third}`}>
                         {CellsSecond.map(item => (
-                            <Link to={item.link} className={`${styles.cells} ${styles.center}`}>
+                            <Link key={item.text} to={item.link} className={`${styles.cells} ${styles.center}`}>
                                 <p>{item.text}</p>
                                 <div className={`${styles.cell} ${styles.center}`}>
                                     <p>+</p>

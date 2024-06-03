@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto', 'Courier New', sans-serif;
   background: black;
+  color: #fff;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -21,6 +26,6 @@ a:visited {
 }
 
 ::selection {
-    background: #fd58b2;
-    color: #fff;
+  background: #fd58b2;
+  color: #fff;
 }
