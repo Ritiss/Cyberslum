@@ -6,6 +6,10 @@
     height: 100vh;
     background: rgba(0, 0, 0, .8);
 
+    .active {
+        color: $pink;
+    }
+
     &_block {
         height: 200px;
 
@@ -84,7 +88,7 @@
         height: 50vh;
         width: 100%;
         flex-direction: column;
-        border: solid $pink;
+        border: solid $blue;
         border-width: 0 10px 0 10px;
 
         &_text {
@@ -96,9 +100,9 @@
                 text-transform: uppercase;
                 font-size: 80px;
                 letter-spacing: 2px;
-                color: $pink;
+                color: #fff;
                 user-select: none;
-                text-shadow: 1px 1px 2px rgba(253, 88, 178, .4), 0 0 1em rgba(95, 243, 251, .4), 0 0 0.2em rgba(253, 88, 178, .4);
+                text-shadow: 1px 1px 2px rgba(95, 243, 251, .4), 0 0 1em rgba(95, 243, 251, .4), 0 0 0.2em rgba(95, 243, 251, .4);
                 animation: broken 4s infinite;
             }
 
@@ -128,23 +132,43 @@
 
             .instruction_description {
                 min-height: 100%;
-                width: 65%;
+                width: 68%;
+                border-radius: 20px;
                 align-items: flex-end;
                 justify-content: flex-start;
                 background-repeat: no-repeat;
                 background-size: cover;
+                box-shadow: inset 400px 1px 300px rgba(0, 0, 0, 1);
 
                 &_text {
-                    padding-left: 60px;
-                    padding-bottom: 40px;
+                    padding-left: 80px;
+                    padding-bottom: 60px;
                     width: 50%;
                     font-size: 26px;
                     text-align: start;
+                    text-shadow: 4px 1px 10px rgba(0, 0, 0, .8);
+
+                    h4 {
+                        margin-bottom: 30px;
+                        position: relative;
+                        font-size: 40px;
+                        text-transform: uppercase;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                            height: 4px;
+                            width: 60px;
+                            background: $pink;
+                        }
+                    }
                 }
             }
 
             .instruction_buttons {
-                width: 35%;
+                width: 32%;
                 height: 100%;
 
                 .intruction_text {
@@ -162,13 +186,22 @@
 
                         button {
                             cursor: pointer;
+                            padding-top: 40px;
+                            padding-bottom: 30px;
                             width: 100%;
                             border: none;
+                            border-bottom: 2px solid $pink;
                             background: none;
-
+                            
+                            text-transform: uppercase;
                             text-align: end;
-                            font-size: 40px;
+                            font-size: 30px;
+                            font-weight: 600;
                             color: #fff;
+
+                            &:hover {
+                                color: $blue;
+                            }
                         }
                     }
 
@@ -178,8 +211,10 @@
                         justify-content: end;
 
                         h3 {
+                            padding-bottom: 30px;
                             font-size: 86px;
                             text-transform: uppercase;
+                            text-shadow: 1px 1px 2px rgba(253, 88, 178, .4), 0 0 1em rgba(253, 88, 178, .4), 0 0 0.2em rgba(253, 88, 178, .4);
 
                             color: #fff;
                         }

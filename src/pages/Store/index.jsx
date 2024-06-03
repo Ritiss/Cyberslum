@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './index.module.scss'
 import Button from "../../components/common/Button"
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { asyncLoadProducts } from '../../store/reducer/Product/product'
@@ -62,7 +63,12 @@ export default function Store() {
                 <section className={`${styles.container} ${styles.center}`}>
                     <div className={`${styles.store_bg} ${styles.center}`}>
                         <div className={`${styles.store_bg_text} ${styles.center}`}>
-                            <h4>{displayName}</h4>
+                            <div className={`${styles.store_bg_text_arrow} ${styles.center}`}>
+                                <Link to='/catalog'><img src="/svg/arrow.svg" alt="" /></Link>
+                            </div>
+                            <div className={`${styles.store_bg_text_title} ${styles.center}`}>
+                                <h4>{displayName}</h4>
+                            </div>
                         </div>
                         <div className={`${styles.store_bg_list} ${styles.center}`}>
                             {filteredProducts.map(item => {

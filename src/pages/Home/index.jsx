@@ -8,7 +8,7 @@ const setActive = ({ isActive }) => isActive ? `${styles.link} ${styles.active}`
 export default function Home() {
     const [tab, setTab] = useState('effect')
 
-    const [selectedType, setSelectedType] = useState(null)
+    const [selectedType, setSelectedType] = useState('сyberware')
 
     const handleClick = (type) => {
         setSelectedType(type)
@@ -59,7 +59,10 @@ export default function Home() {
                                 <div className={`${styles.instruction_description} ${styles.center}`} style={{ backgroundImage: `url(${currentIntro ? currentIntro.img : ''})` }}>
                                     <div className={`${styles.instruction_description_text} ${styles.center}`}>
                                         {currentIntro ? (
-                                            <p>{currentIntro.desc}</p>
+                                            <div>
+                                                <h4>{currentIntro.title}</h4>
+                                                <p>{currentIntro.desc}</p>
+                                            </div>
                                         ) : (
                                             <p>Что вам известно о мире полном технологий?</p>
                                         )}
