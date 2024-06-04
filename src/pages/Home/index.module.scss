@@ -132,7 +132,7 @@
 
             .instruction_description {
                 min-height: 100%;
-                width: 68%;
+                width: 65%;
                 border-radius: 20px;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -145,7 +145,7 @@
                     padding-bottom: 60px;
                     width: 50%;
                     font-size: 26px;
-                    text-align: start;
+                    text-align: justify;
                     text-shadow: 4px 1px 10px rgba(0, 0, 0, .8);
 
                     h4 {
@@ -168,7 +168,7 @@
             }
 
             .instruction_buttons {
-                width: 32%;
+                width: 35%;
                 height: 100%;
 
                 .intruction_text {
@@ -198,9 +198,10 @@
                             font-size: 30px;
                             font-weight: 600;
                             color: #fff;
+                            transition: color .3s;
 
                             &:hover {
-                                color: $blue;
+                                color: $pink;
                             }
                         }
                     }

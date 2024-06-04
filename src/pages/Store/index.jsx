@@ -88,29 +88,33 @@ export default function Store() {
                         {selectedProduct ? (
                             <div className={`${styles.desc_bg} ${styles.center}`}>
                                 <div className={`${styles.desc_bg_block} ${styles.center}`}>
-                                    <div className={`${styles.desc_bg_block_product} ${styles.center}`}>
+                                    <div className={`${styles.object} ${styles.center}`}>
                                         <img src={selectedProduct.img} alt="" className={styles.desc_image} />
                                         <p className={styles.object_name}>{selectedProduct.name}</p>
-                                        <p className={styles.object_name}>{selectedProduct.price}</p>
-                                        <div>
-                                            <div>
-                                                <p className={styles.object_type}>Тип</p>
+                                        <p className={styles.object_price}>{selectedProduct.price}</p>
+                                        <div className={`${styles.object_stats} ${styles.center}`}>
+                                            <div className={`${styles.object_stats_type} ${styles.center}`}>
+                                                <h4>Тип</h4>
                                                 <p>{selectedProduct.type}</p>
                                             </div>
-                                            <div>
-                                                <p className={styles.object_capacity}>Вместимость</p>
+                                            <div className={`${styles.object_stats_capacity} ${styles.center}`}>
+                                                <h4>Вместимость</h4>
                                                 <p>{selectedProduct.capacity}</p>
                                             </div>
                                         </div>
-                                        <p className={styles.object_description}>Описание</p>
-                                        <p>{selectedProduct.description}</p>
-                                        <p className={styles.object_effect}>Эффекты</p>
-                                        <p>{selectedProduct.effect}</p>
+                                        <div className={`${styles.object_description} ${styles.center}`}>
+                                            <h4>Описание</h4>
+                                            <p>{selectedProduct.description}</p>
+                                        </div>
+                                        <div className={`${styles.object_effect} ${styles.center}`}>
+                                            <h4>Эффект</h4>
+                                            <p>{selectedProduct.effect}</p>
+                                        </div>
                                         {notification ?
                                             <div className={styles.notification}>
                                                 <p>Товар добавлен в корзину!</p>
                                             </div>
-                                            : <Button onClick={() => addToCart(selectedProduct)}>Добавить в корзину</Button>
+                                            : <Button onClick={() => addToCart(selectedProduct)} className={styles.neon_button}>Добавить в корзину</Button>
                                         }
 
                                     </div>
