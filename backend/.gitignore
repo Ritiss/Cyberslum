@@ -154,7 +154,6 @@ cython_debug/
 
 # SQLite
 sqlite_database/
-pgdata/
 
 # Project specific
 media_storage
