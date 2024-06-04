@@ -94,22 +94,16 @@
 
     "name": "Акселератор",
 
-    
     "type": "Лобная доля",
 
-    
     "price": 40000,
 
-    
     "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/90/SubdermalCoProcessor.png",
 
-    
     "capacity": 48,
-
     
     "description": "Имплант уменьшает время восстановления всего киберпрограммного обеспечения на −5,0–7,5%",
 
-    
     "effect": "Мгновенное восстановление всех киберпрограмм после запуска"
 }
 ```
