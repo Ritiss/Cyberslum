@@ -28,7 +28,7 @@ Postman
 2. В Docker проверить наличие запущенного контейнера cyberslum-backend-bd (в некоторых случаях может потребоваться VPN)
 
 
-![335993137-97ec7402-9543-49d8-a592-01fccc8f0f75](https://github.com/Ritiss/Cyberslum/assets/115828441/7dd3ba2c-c676-4c48-95d2-7ecb3bed7952)
+![изображение](https://github.com/Ritiss/Cyberslum/assets/115828441/894d976e-da13-4c8d-b70f-f929a0c4299e)
 
 
 
