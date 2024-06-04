@@ -1,6 +1,3 @@
-#Cyberslum
-
-
 ![logo](https://github.com/Ritiss/Cyberslum/assets/115828441/6f43a2c4-d18d-4c03-8666-62430323e9ec)
 
 
