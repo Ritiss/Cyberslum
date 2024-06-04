@@ -26,7 +26,7 @@ Postman
 В докере соберется контейнер 
 
 
-3. В Docker проверить наличие одного запущенного контейнера cyberslum-backend-bd
+3. В Docker проверить наличие запущенного контейнера cyberslum-backend-bd
 
 
 ![335993137-97ec7402-9543-49d8-a592-01fccc8f0f75](https://github.com/Ritiss/Cyberslum/assets/115828441/7dd3ba2c-c676-4c48-95d2-7ecb3bed7952)
