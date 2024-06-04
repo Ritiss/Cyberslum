@@ -3,7 +3,7 @@ import Button from '../../components/common/Button'
 import styles from './index.module.scss'
 import { introduction } from '../../data'
 
-const setActive = ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link
+const setActive = ({ isActive }) => isActive ? `${styles.but} ${styles.active}` : styles.but
 
 export default function Home() {
     const [tab, setTab] = useState('effect')
@@ -55,8 +55,8 @@ export default function Home() {
                 <div className={`${styles.instruction} ${styles.center}`}>
                     <div className={styles.container}>
                         <section className={`${styles.instruction_block} ${styles.center}`}>
-                            <div className={`${styles.instruction_block_section} ${styles.center}`}>
-                                <div className={`${styles.instruction_description} ${styles.center}`} style={{ backgroundImage: `url(${currentIntro ? currentIntro.img : ''})` }}>
+                            <div className={`${styles.instruction_block_section} ${styles.center}`}  style={{ backgroundImage: `url(${currentIntro ? currentIntro.img : ''})` }}>
+                                <div className={`${styles.instruction_description} ${styles.center}`}>
                                     <div className={`${styles.instruction_description_text} ${styles.center}`}>
                                         {currentIntro ? (
                                             <div>

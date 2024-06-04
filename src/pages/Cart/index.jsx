@@ -60,9 +60,9 @@ export default function Cart() {
                                                         <p>{item.price}</p>
                                                     </div>
                                                     <div className={`${styles.product_count} ${styles.center}`}>
-                                                        {/* <Button onClick={() => updateProductCount(item, -1)} className={styles.product_count_but}>–</Button>
+                                                        <Button onClick={() => updateProductCount(item, -1)} className={styles.product_count_but}>–</Button>
                                                         <p>{item.count}</p>
-                                                        <Button onClick={() => updateProductCount(item, 1)} className={styles.product_count_but}>+</Button> */}
+                                                        <Button onClick={() => updateProductCount(item, 1)} className={styles.product_count_but}>+</Button>
                                                     </div>
                                                     <div className={`${styles.product_delete} ${styles.center}`}>
                                                         <Button onClick={() => removeFromCart(item)} className={styles.trash}>

@@ -100,7 +100,7 @@
             }
 
             .cart_name {
-                height: 20%;
+                min-height: 20%;
                 width: 100%;
 
                 h2 {
@@ -111,7 +111,7 @@
             }
 
             .empty_cart {
-                height: 60%;
+                min-height: 60%;
                 width: 100%;
 
                 h3 {
@@ -138,7 +138,7 @@
             }
 
             .order {
-                height: 20%;
+                min-height: 20%;
                 width: 100%;
 
                 &_button {

@@ -53,7 +53,7 @@ export default function Store() {
         setNotification(true)
         setTimeout(() => {
             setNotification(false)
-        }, 500)
+        }, 2000)
     }
 
     return (
@@ -112,7 +112,7 @@ export default function Store() {
                                         </div>
                                         {notification ?
                                             <div className={styles.notification}>
-                                                <p>Товар добавлен в корзину!</p>
+                                                <p className={`${styles.neon_button} ${styles.notis}`}>Товар добавлен в корзину!</p>
                                             </div>
                                             : <Button onClick={() => addToCart(selectedProduct)} className={styles.neon_button}>Добавить в корзину</Button>
                                         }
