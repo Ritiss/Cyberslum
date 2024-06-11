@@ -141,11 +141,18 @@
             .order {
                 min-height: 20%;
                 width: 100%;
+                flex-direction: column;
 
                 &_button {
                     margin-top: 10px;
                     width: 220px;
                     height: 80px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                    color: #fff;
                 }
             }
         }

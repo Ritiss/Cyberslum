@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { asyncLoadProducts } from '../../store/reducer/Product/product'
+
+
 export default function Store() {
 
     const { type } = useParams()
@@ -43,7 +45,15 @@ export default function Store() {
     }, [])
 
     const addToCart = (product) => {
-        const newCart = [...cart, product]
+        const existingProductIndex = cart.findIndex(item => item.id === product.id)
+        let newCart = [...cart]
+
+        if (existingProductIndex >= 0) {
+            newCart[existingProductIndex].quantity += 1
+        } else {
+            newCart.push({ ...product, quantity: 1 })
+        }
+
         setCart(newCart)
         localStorage.setItem('cart', JSON.stringify(newCart))
         showNotification()

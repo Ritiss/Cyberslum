@@ -10,6 +10,7 @@ export default function Cart() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [cart, setCart] = useState([])
     const { isAuthenticated } = useAuth()
+
     useEffect(() => {
         const savedCart = localStorage.getItem('cart')
         if (savedCart) {
@@ -17,22 +18,26 @@ export default function Cart() {
         }
     }, [])
 
-
     const removeFromCart = (index) => {
         const newCart = cart.filter((_, i) => i !== index)
         setCart(newCart)
         localStorage.setItem('cart', JSON.stringify(newCart))
     }
 
-    const updateProductCount = (product, increment) => {
-        const newCart = cart.map(item => {
-            if (item.name === product.name) {
-                return { ...item, count: Math.max(1, item.count + increment) }
-            }
-            return item
-        })
+    const updateQuantity = (index, amount) => {
+        const newCart = [...cart]
+        newCart[index].quantity += amount
+        if (newCart[index].quantity <= 0) {
+            newCart.splice(index, 1)
+        }
         setCart(newCart)
+        localStorage.setItem('cart', JSON.stringify(newCart))
     }
+
+    const totalPrice = () => {
+        return cart.reduce((total, item) => total + item.price * item.quantity, 0)
+    }
+
     return (
         <>
             {isModalOpen && <ModalLogin closeModal={setIsModalOpen} />}
@@ -59,12 +64,12 @@ export default function Cart() {
                                                         <p>{item.name}</p>
                                                     </div>
                                                     <div className={`${styles.product_price} ${styles.center}`}>
-                                                        <p>{item.price}</p>
+                                                        <p>{item.price * item.quantity}</p>
                                                     </div>
                                                     <div className={`${styles.product_count} ${styles.center}`}>
-                                                        {/* <Button onClick={() => updateProductCount(item, -1)} className={styles.product_count_but}>–</Button>
-                                                        <p>{item.count}</p>
-                                                        <Button onClick={() => updateProductCount(item, 1)} className={styles.product_count_but}>+</Button> */}
+                                                        <Button onClick={() => updateQuantity(index, -1)} className={styles.product_count_but}>–</Button>
+                                                        <p>{item.quantity}</p>
+                                                        <Button onClick={() => updateQuantity(index, 1)} className={styles.product_count_but}>+</Button>
                                                     </div>
                                                     <div className={`${styles.product_delete} ${styles.center}`}>
                                                         <Button onClick={() => removeFromCart(index)} className={styles.trash}>
@@ -87,6 +92,7 @@ export default function Cart() {
                                 </div>
                             }
                             <div className={`${styles.order} ${styles.center}`}>
+                                <p>Общая стоимость: {totalPrice()}</p>
                                 <div className={`${styles.order_button} ${styles.center}`} >
                                     {isAuthenticated ?
                                         <Link to="/order" className={styles.neon_button}>
