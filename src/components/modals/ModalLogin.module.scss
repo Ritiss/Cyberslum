@@ -20,6 +20,7 @@
     width: 100vw;
     top: 0;
     left: 0;
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     user-select: none;
 

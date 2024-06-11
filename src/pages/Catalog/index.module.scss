@@ -15,6 +15,12 @@
         background: center no-repeat url('/img/cyberBody.png');
         background-size: contain;
 
+        @media only screen and (max-width: 767px) {
+            margin-top: 10px;
+            height: 80%;
+            background-size: contain;
+        }
+
         &_block {
             height: 100%;
             flex-direction: column;
@@ -26,6 +32,10 @@
                 flex-direction: column;
 
                 text-decoration: none;
+
+                @media only screen and (max-width: 767px) {
+                    height: 20%;
+                }
 
                 p {
                     cursor: pointer;
@@ -41,6 +51,10 @@
                     &:hover+.cell {
                         background: center no-repeat url('/img/button2.png');
                         background-size: contain;
+                    }
+
+                    @media only screen and (max-width: 767px) {
+                        font-size: 16px;
                     }
                 }
 
@@ -94,6 +108,10 @@
             width: 40%;
             align-items: end;
 
+            @media only screen and (max-width: 767px) {
+                height: 100%;
+            }
+
             .cells {
                 align-items: end;
 
@@ -118,6 +136,10 @@
         .third {
             align-items: start;
             width: 40%;
+
+            @media only screen and (max-width: 767px) {
+                height: 100%;
+            }
 
             .cells {
                 align-items: start;

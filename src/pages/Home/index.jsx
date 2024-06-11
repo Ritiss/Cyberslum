@@ -28,10 +28,14 @@ export default function Home() {
                         <section className={`${styles.welcome_block} ${styles.center}`}>
                             <div className={styles.welcome_block_text}>
                                 <h2>Мы поможем осуществить мечту</h2>
-                                <h1><span className={styles.l_green}>В</span>
+                                <h1>
+                                    <span className={styles.l_green}>В</span>
                                     <span className={styles.l_blue}>ре</span>
-                                    <span className={styles.l_purple}>мя м</span>
-                                    <span className={styles.l_pink}>одиф</span>
+                                    <span className={styles.l_purple}>мя</span>
+                                    <span className={styles.w_100}>&nbsp;</span>
+                                    <span className={styles.l_purple}>м</span>
+                                    <span className={styles.l_pink}>о</span>
+                                    <span className={styles.l_pink}>диф</span>
                                     <span className={styles.l_orange}>ика</span>
                                     <span className={styles.l_yellow}>ций</span>
                                 </h1>

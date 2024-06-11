@@ -7,18 +7,26 @@ $primary: #fd6059;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
     display: flex;
     justify-content: center;
     z-index: 10;
     // background: $dark;
 
     .container {
+        padding: 15px 8%;
         height: 100%;
-        width: 84%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        @media only screen and (max-width: 767px) {
+            height: 64px;
+            gap: 8px;
+            flex-wrap: nowrap;
+        }
 
         .logoSection {
             display: flex;
@@ -28,6 +36,10 @@ $primary: #fd6059;
             a img {
                 margin-right: 15px;
                 width: 250px;
+
+                @media only screen and (max-width: 767px) {
+                    width: 150px;
+                }
             }
 
             ul {
@@ -57,7 +69,23 @@ $primary: #fd6059;
             }
         }
 
+        .burgerMenu {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+
+            @media only screen and (max-width: 767px) {
+                display: flex;
+            }
+        }
+
         .headerMenu {
+            display: flex;
+            flex-wrap: wrap;
+
             .link {
                 background: transparent;
                 border: 0;
@@ -65,6 +93,7 @@ $primary: #fd6059;
 
                 margin-right: 2vw;
                 font-size: 22px;
+                white-space: nowrap;
                 text-decoration: none;
                 text-transform: uppercase;
                 text-shadow: 0 0 5px #f85ab679, 0 0 5px #f85ab679;
@@ -73,12 +102,39 @@ $primary: #fd6059;
                 &:hover {
                     animation: broken 3s infinite;
                 }
+
+                @media only screen and (max-width: 767px) {
+                    margin: 50px 0 0 30px;
+                    font-size: 28px;
+                }
             }
 
             .active {
                 text-shadow: 0 0 5px $blue, 0 0 5px $blue;
                 color: $blue;
                 animation: broken 6s infinite;
+            }
+
+            @media only screen and (max-width: 767px) {
+                opacity: 0;
+                position: absolute;
+                padding: 20px 0;
+                top: 100%;
+                left: 0;
+                height: calc(100vh - 64px);
+                width: 100%;
+                align-items: flex-start;
+                flex-direction: column;
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                background: rgba(7, 8, 13, .8);
+                transition: all .3s linear;
+                pointer-events: none;
+
+                &.open {
+                    opacity: 1;
+                    pointer-events: all;
+                }
             }
         }
     }

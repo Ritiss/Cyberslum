@@ -81,6 +81,7 @@
         &_bg {
             min-height: 106%;
             width: 60%;
+            -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.5);
@@ -168,7 +169,6 @@
 
                         p {
                             width: 100%;
-                            text-align: justify;
                             text-shadow: 4px 1px 10px rgba(0, 0, 0, .4);
                             font-size: 18px;
                             color: #fff;
