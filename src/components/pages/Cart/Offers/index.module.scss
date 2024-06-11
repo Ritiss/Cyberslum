@@ -1,0 +1,41 @@
+@import '../../../../style/colors.scss';
+@import '../../../../style/global.scss';
+
+.offer {
+    min-height: 100%;
+    flex-direction: column;
+
+    &_bg {
+        cursor: pointer;
+        margin-bottom: 30px;
+        padding: 30px;
+        height: 200px;
+        width: 600px;
+        border-radius: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-shadow: 4px 1px 10px rgba(0, 0, 0, .8);
+        box-shadow: inset 200px 1px 200px rgba(0, 0, 0, .8), 0px 5px 10px 0px rgba(0, 0, 0, .5);
+
+        &:hover {
+            h5 {
+                color: $blue;
+            }
+        }
+
+        h5 {
+            margin-bottom: 10px;
+            transition: color .3s;
+            font-size: 24px;
+            color: $pink;
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+}

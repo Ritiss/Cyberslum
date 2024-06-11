@@ -3,16 +3,19 @@ import Button from '../../components/common/Button'
 import styles from './index.module.scss'
 import { introduction } from '../../data'
 
-const setActive = ({ isActive }) => isActive ? `${styles.but} ${styles.active}` : styles.but
 
 export default function Home() {
     const [tab, setTab] = useState('effect')
 
     const [selectedType, setSelectedType] = useState('сyberware')
 
-    const handleClick = (type) => {
+    const hClick = (type) => {
         setSelectedType(type)
     };
+
+    const butActive = (type) => ({
+        color: selectedType === type ? '#fd58b2' : 'white'
+    });
 
     const currentIntro = introduction.find(item => item.type === selectedType)
 
@@ -55,7 +58,7 @@ export default function Home() {
                 <div className={`${styles.instruction} ${styles.center}`}>
                     <div className={styles.container}>
                         <section className={`${styles.instruction_block} ${styles.center}`}>
-                            <div className={`${styles.instruction_block_section} ${styles.center}`}  style={{ backgroundImage: `url(${currentIntro ? currentIntro.img : ''})` }}>
+                            <div className={`${styles.instruction_block_section} ${styles.center}`} style={{ backgroundImage: `url(${currentIntro ? currentIntro.img : ''})` }}>
                                 <div className={`${styles.instruction_description} ${styles.center}`}>
                                     <div className={`${styles.instruction_description_text} ${styles.center}`}>
                                         {currentIntro ? (
@@ -76,16 +79,19 @@ export default function Home() {
                                         <section className={styles.buttons_block}>
                                             <div>
                                                 <Button
+                                                    style={butActive('сyberware')}
                                                     isActive={selectedType == 'сyberware'}
-                                                    onClick={() => handleClick('сyberware')} className={setActive}> Киберимпланты
+                                                    onClick={() => hClick('сyberware')}> Киберимпланты
                                                 </Button>
                                                 <Button
+                                                    style={butActive('ripperdoc')}
                                                     isActive={selectedType == 'ripperdoc'}
-                                                    onClick={() => handleClick('ripperdoc')} className={setActive}> Риперы
+                                                    onClick={() => hClick('ripperdoc')}> Риперы
                                                 </Button>
                                                 <Button
+                                                    style={butActive('сyberpsychosis')}
                                                     isActive={selectedType == 'сyberpsychosis'}
-                                                    onClick={() => handleClick('сyberpsychosis')} className={setActive}> Киберпсихоз
+                                                    onClick={() => hClick('сyberpsychosis')}> Киберпсихоз
                                                 </Button>
                                             </div>
                                         </section>

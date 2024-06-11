@@ -130,3 +130,23 @@ export const CellsSecond = [
   }
 ]
 
+export const Offer = [
+  {
+    title: 'Акция',
+    link: '/catalog',
+    img: '/img/offer/offer_1.jpg',
+    desc: 'При покупке от 3-х имплантов - установка от рипера бесплатно'
+  },
+  {
+    title: 'Не упустите возможность',
+    link: '/catalog/frontal_cortex',
+    img: '/img/offer/offer_2.jpg',
+    desc: 'Заказывайте импланты для лобной доли и получите разведчика xN2 в подарок'
+  },
+  {
+    title: 'Мы открылись',
+    link: 'https://yandex.ru/maps/-/CDr7i81s',
+    img: '/img/offer/offer_3.jpg',
+    desc: 'Пункт выдачи имплантов теперь и в Твери'
+  }
+]

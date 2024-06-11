@@ -4,11 +4,12 @@ import styles from './index.module.scss'
 import ModalLogin from "../../components/modals/ModalLogin"
 import Button from "../../components/common/Button"
 import { useAuth } from "../../context/auth"
+import Offers from "../../components/pages/Cart/Offers"
 
 export default function Cart() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [cart, setCart] = useState([])
-    const {isAuthenticated} = useAuth()
+    const { isAuthenticated } = useAuth()
     useEffect(() => {
         const savedCart = localStorage.getItem('cart')
         if (savedCart) {
@@ -17,9 +18,10 @@ export default function Cart() {
     }, [])
 
 
-    const removeFromCart = (productToRemove) => {
-        const newCart = cart.filter(product => product.name !== productToRemove.name)
+    const removeFromCart = (index) => {
+        const newCart = cart.filter((_, i) => i !== index)
         setCart(newCart)
+        localStorage.setItem('cart', JSON.stringify(newCart))
     }
 
     const updateProductCount = (product, increment) => {
@@ -60,12 +62,12 @@ export default function Cart() {
                                                         <p>{item.price}</p>
                                                     </div>
                                                     <div className={`${styles.product_count} ${styles.center}`}>
-                                                        <Button onClick={() => updateProductCount(item, -1)} className={styles.product_count_but}>–</Button>
+                                                        {/* <Button onClick={() => updateProductCount(item, -1)} className={styles.product_count_but}>–</Button>
                                                         <p>{item.count}</p>
-                                                        <Button onClick={() => updateProductCount(item, 1)} className={styles.product_count_but}>+</Button>
+                                                        <Button onClick={() => updateProductCount(item, 1)} className={styles.product_count_but}>+</Button> */}
                                                     </div>
                                                     <div className={`${styles.product_delete} ${styles.center}`}>
-                                                        <Button onClick={() => removeFromCart(item)} className={styles.trash}>
+                                                        <Button onClick={() => removeFromCart(index)} className={styles.trash}>
                                                             <img src="/svg/trash.svg" alt="" />
                                                         </Button>
                                                     </div>
@@ -105,7 +107,7 @@ export default function Cart() {
                             </div>
                         </div>
                         <div className={`${styles.cart_block_second} ${styles.center}`}>
-                            <h5>Акции</h5>
+                            <Offers />
                         </div>
                     </div>
                 </div>
