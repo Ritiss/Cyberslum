@@ -41,6 +41,11 @@ export default function Header() {
         setIsSticky(!isMenuOpen)
     }
 
+    const closeMenu = () => {
+        setIsMenuOpen(false)
+        setIsSticky(false)
+    }
+
     useEffect(() => {
         function handleScroll(event) {
             if (window.scrollY > 0) {
@@ -72,12 +77,12 @@ export default function Header() {
                     </div>
                     <div className={`${styles.headerMenu} ${isMenuOpen ? styles.open : ''}`}>
                         {isAuthenticated ?
-                            <NavLink key={"profile"} to='/profile' className={setActive}>Профиль</NavLink>
+                            <NavLink key={"profile"} to='/profile' className={setActive} onClick={closeMenu}>Профиль</NavLink>
                             :
                             <Button onClick={() => setIsModalOpen(!isModalOpen)} className={styles.link}>Профиль</Button>
                         }
                         {HeaderNavigation.map((item, index) => (
-                            <NavLink key={index} to={item.link} className={setActive}>{item.name}</NavLink>
+                            <NavLink key={index} to={item.link} className={setActive} onClick={closeMenu}>{item.name}</NavLink>
                         ))}
                     </div>
                 </div>

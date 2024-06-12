@@ -1,0 +1,414 @@
+{
+    "name": "Акселератор",
+    "type": "Лобная доля",
+    "price": 40000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/90/SubdermalCoProcessor.png",
+    "capacity": 48,
+    "description": "Имплант уменьшает время восстановления всего киберпрограммного обеспечения на −5,0–7,5%",
+    "effect": "Мгновенное восстановление всех киберпрограмм после запуска"
+}
+{
+    "name": "Дополнительное ОЗУ",
+    "type": "Лобная доля",
+    "price": 10000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/7/71/RamUpgrade.png",
+    "capacity": 8,
+    "description": "Этот имплант увеличивает скорость восстановления оперативной памяти на +0,05-0,2 единицы в секунду",
+    "effect": "Увеличивает максимальный объем оперативной памяти в 1-2 раза"
+}
+}
+    "name": "Диналар Сандевистан",
+    "type": "Операционная система",
+    "price": 25000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/6/62/SandevistanC2.png",
+    "capacity": 18,
+    "description": "Имплант имеет базовую продолжительность 8 секунд и время восстановления 55 секунд",
+    "effect": "Во время активации время замедляется на 50% для всех, кроме пользователя"
+}
+{
+    "name": "Мехатронное ядро",
+    "type": "Лобная доля",
+    "price": 20000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/a/ab/MechatronicCore.png",
+    "capacity": 5,
+    "description": "Увеличивает наносимый ущерб по дронам, роботам, мехам и турелям на 15-40%",
+    "effect": "Увеличивает максимальный объем оперативной памяти на 1-2"
+}
+{
+    "name": "Менеджер памяти Камилло",
+    "type": "Лобная доля",
+    "price": 8000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/d/df/CamilloRamManager.png",
+    "capacity": 10,
+    "description": "Имплант позволяет автоматически восстанавливать 20–23 % максимальной оперативной памяти, когда доступная оперативная память равна или ниже 15–20 % максимальной оперативной памяти",
+    "effect": "Увеличивает максимальный объем оперативной памяти на 2"
+}
+{
+    "name": "Мегадиск",
+    "type": "Лобная доля",
+    "price": 35000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/0/05/ExDisk.png",
+    "capacity": 10,
+    "description": "Имплант увеличивает скорость загрузки быстрых хаков на 20-35%",
+    "effect": "Увеличивает максимальную оперативную память в 4-6 раз"
+}
+{
+    "name": "Мнемонический усилитель",
+    "type": "Лобная доля",
+    "price": 5000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/b/b5/MemoryBoost.png",
+    "capacity": 18,
+    "description": "Имплант автоматически восстанавливает 0,4-1,25 ОЗУ",
+    "effect": "Увеличивает максимальный объем оперативной памяти на 1"
+}
+{
+    "name": "Интралёд",
+    "type": "Лобная доля",
+    "price": 25000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/99/SelfIce.png",
+    "capacity": 5,
+    "description": "Имплант автоматически блокирует быстрый взлом недоброжелателя. Время восстановления этой способности составляет 45-20 секунд",
+    "effect": "Увеличивает максимальный объем оперативной памяти в 1-2 раза"
+}
+{
+    "name": "БиоДайн Берсерк",
+    "type": "Операционная система",
+    "price": 18000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/c/c2/BerserkC2.png",
+    "capacity": 20,
+    "description": "Во время активации снижает затраты выносливости на 100%. Продолжительность 8-10 секунд, откат 1 минута",
+    "effect": "Восстановите 25% здоровья за каждого недоброжелателя, нейтрализованного во время Берсерка"
+}
+{
+    "name": "Зетатех Берсерк",
+    "type": "Операционная система",
+    "price": 22000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/4/4f/BerserkC3.png",
+    "capacity": 16,
+    "description": "Во время активации снижает затраты выносливости на 100%. Продолжительность 8-10 секунд, откат 45 секунд",
+    "effect": "Восстановите 25% здоровья во время отключения способности"
+}
+{
+    "name": "Зетатех Сандевистан",
+    "type": "Операционная система",
+    "price": 20000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/93/SandevistanC1.png",
+    "capacity": 20,
+    "description": "Имплант имеет базовую продолжительность 6 секунд и время восстановления 45 секунд",
+    "effect": "Во время активации время замедляется на 30% для всех, кроме пользователя"
+}
+{
+    "name": "Милитех Берсерк",
+    "type": "Операционная система",
+    "price": 50000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/5/56/BerserkC4.png",
+    "capacity": 35,
+    "description": "Имплант дает +15-20% скорости передвижения",
+    "effect": "Восстановите 25% здоровья во время отключения способности"
+}
+{
+    "name": "Милитек Канто",
+    "type": "Операционная система",
+    "price": 55000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/9d/HauntedCyberdeck.png",
+    "capacity": 14,
+    "description": "Имплант имеет 10 модулей оперативной памяти, 4 слота для быстрого взлома и размер буфера 12",
+    "effect": "Открывает быстрый взлом «Врата Блэкволла»"
+}
+{
+    "name": "Тень Арасаки",
+    "type": "Операционная система",
+    "price": 8000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/e/ef/ArasakaShadow.png",
+    "capacity": 14,
+    "description": "Недоброжелателям требуется на 40% больше времени, чтобы отследить вашу позицию",
+    "effect": "Позволяет выполнять быстрые взломы устройств во время сканирования"
+}
+{
+    "name": "Тетратроник Рипплер",
+    "type": "Операционная система",
+    "price": 12000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/5/5d/TetratronicRippler.png",
+    "capacity": 16,
+    "description": "Имплант имеет 5–20 модулей оперативной памяти, 4–8 слотов быстрого взлома и размер буфера 4",
+    "effect": "Позволяет выполнять быстрые взломы врагов и устройств во время сканирования"
+}
+{
+    "name": "Милитех Паралайн",
+    "type": "Операционная система",
+    "price": 10000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/2/23/MilitechParaline.png",
+    "capacity": 14,
+    "description": "Имплант имеет 5 модулей оперативной памяти, 4 слота быстрого взлома и размер буфера 4",
+    "effect": "Позволяет выполнять быстрые взломы врагов и устройств во время сканирования"
+}
+{
+    "name": "Клинки богомола",
+    "type": "Руки",
+    "price": 20000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/8/89/MantisBlades.png",
+    "capacity": 8,
+    "description": "Имплант позволяет наносить больше физического ущерба",
+    "effect": "Ячейки для модификаций: 1/2/3"
+}
+{
+    "name": "Моноструна",
+    "type": "Руки",
+    "price": 30000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/d/d6/NanoWires.png",
+    "capacity": 8,
+    "description": "Имплант накапливает заряд, когда не используется. Удары заряженной моноструной наносят дополнительный ущерб, зависящий от уровня заряда",
+    "effect": "Ячейки для модификаций: 1/2/3"
+}
+{
+    "name": "Руки гориллы",
+    "type": "Руки",
+    "price": 38000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/3/35/StrongArms.png",
+    "capacity": 8,
+    "description": "Повышает физические способности пользователя, атрибут тела увеличивается на 4",
+    "effect": "Добавляет +0,5% к скорости настройки тела"
+}
+{
+    "name": "Система запуска снарядов",
+    "type": "Руки",
+    "price": 28000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/c/cf/ProjectileLauncher.png",
+    "capacity": 8,
+    "description": "Имплант позволяет прицелиться и запустить снаряд. Снаряды можно заряжать и дальность их полета будет увеличиваться",
+    "effect": "Заряженные выстрелы получают +25% радиус разброса"
+}
+{
+    "name": "Лапы рыси",
+    "type": "Ноги",
+    "price": 54000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/0/09/CatPaws.png",
+    "capacity": 5,
+    "description": "Имплантат уменьшает звуки от движения на 50%, уменьшает урон от падения на 20% и увеличивает скорость передвижения в приседе на 6-12%",
+    "effect": "Увеличивает броню на 16-34"
+}
+{
+    "name": "Укрепленные лодыжки",
+    "type": "Ноги",
+    "price": 48000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/96/ReinforcedMuscles.png",
+    "capacity": 6,
+    "description": "Имплант позволяет совершать заряженные прыжки",
+    "effect": "Увеличивает броню на 35"
+}
+{
+    "name": "Укрепленные сухожилия",
+    "type": "Ноги",
+    "price": 30000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/5/55/BoostedTendons.png",
+    "capacity": 8,
+    "description": "Имплант позволяет совершать двойной прыжок",
+    "effect": "Увеличивает броню на 20"
+}
+{
+    "name": "Бионические легкие",
+    "type": "Скелет",
+    "price": 20000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/9f/PainDistributor.png",
+    "capacity": 25,
+    "description": "Пока этот имплант установлен, предметы повышающие здоровье дадут 5–9% дополнительной брони и снизят затраты выносливости на 15–27 на 5 секунд",
+    "effect": "Увеличивает эффективность предметов повышающих здоровье"
+}
+{
+    "name": "Бионические суставы",
+    "type": "Скелет",
+    "price": 5600,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/f/fa/BionicJoints.png",
+    "capacity": 8,
+    "description": "Имплант дает простую и эффективную защиту",
+    "effect": "Увеличивает броню на 25-85"
+}
+{
+    "name": "Высокоплотный костный мозг",
+    "type": "Скелет",
+    "price": 15000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/c/c9/DenseMarrow.png",
+    "capacity": 16,
+    "description": "Увеличивает базовый ущерб от ближних атак на 7/15/25%",
+    "effect": "Увеличивает расход выносливости на 10%"
+}
+{
+    "name": "Кинетическая рамка",
+    "type": "Скелет",
+    "price": 12000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/3/34/BoneMarrowCells.png",
+    "capacity": 16,
+    "description": "Имплант увеличивает шанс смягчения последствий на 8-16, пока выносливость превышает 85%",
+    "effect": "Имеет 2 слота для расширений"
+}
+{
+    "name": "Титановые кости",
+    "type": "Скелет",
+    "price": 26000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/4/49/TitaniumInfusedBones.png",
+    "capacity": 6,
+    "description": "Имплант увеличивает способность поднятия тяжестей на 30-62%",
+    "effect": "Увеличивает броню на 10-34"
+}
+{
+    "name": "Эпиморфный скелет",
+    "type": "Скелет",
+    "price": 42000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Endoskeleton.png",
+    "capacity": 40,
+    "description": "Имплант увеличивает максимальное здоровье на 10–13%",
+    "effect": "Увеличивает броню на 96-126"
+}
+{
+    "name": "Керезников",
+    "type": "Нервная система",
+    "price": 24000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/1/1d/Kerenzikov.png",
+    "capacity": 12,
+    "description": "Во время скольжения, уклонения или рывка замедляет время на 60% на 2-3,75 секунды. Имеет время восстановления 8-6 секунд",
+    "effect": "Ячейки для модификаций: 1/2/3"
+}
+{
+    "name": "Неоволокна",
+    "type": "Нервная система",
+    "price": 18000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/e/e5/NeoFiber.png",
+    "capacity": 14,
+    "description": "Имплант увеличивают вероятность компенсации получаемого ущерба на 1/2/3/4/5%",
+    "effect": "Размер компенсации получаемого ущерба 2/4/6/8/10%"
+}
+{
+    "name": "Ревульсор",
+    "type": "Нервная система",
+    "price": 24000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/d/d4/ReflexRecorder.png",
+    "capacity": 12,
+    "description": "Имплант автоматически замедляет время на 40-60% на 3,5-4,5 секунды, когда здоровье падает ниже 25%. Время восстановления способности составляет 50-35 секунд",
+    "effect": "Имеет 2 слота для расширений"
+}
+{
+    "name": "Синаптический ускоритель",
+    "type": "Нервная система",
+    "price": 18000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/a/a4/SynapticAccelerator.png",
+    "capacity": 5,
+    "description": "Имплант замедляет время на 25/30/40/50% на 2/3/4 секунды, когда вторгается недоброжелатель. Восстановление: 60 сек",
+    "effect": "Имеет 1 слот для расширений"
+}
+{
+    "name": "Нанопокрытие",
+    "type": "Кожа",
+    "price": 18000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/a/ab/NanoTechPlates.png",
+    "capacity": 16,
+    "description": "Имплант дает 4-7% шанс заблокировать летящие снаряды. После выполнения уклонения или рывка этот бонус становится 100%",
+    "effect": "Увеличивает броню на 38-78"
+}
+{
+    "name": "Панцирь",
+    "type": "Кожа",
+    "price": 16000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/4/44/WeirdTankyPlating.png",
+    "capacity": 16,
+    "description": "Имплант увеличивает эффективность брони на 20-32%",
+    "effect": "Увеличивает броню на 38-94"
+}
+{
+    "name": "Решетка Когито",
+    "type": "Кожа",
+    "price": 10000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/6/6c/CogitoFrame.png",
+    "capacity": 12,
+    "description": "Увеличивает броню на этом имплантате на 200-240%, пока доступная оперативная память ниже 2/4/6/8/10 единиц",
+    "effect": "Увеличивает броню на 18-54"
+}
+{
+    "name": "Базовая оптика Кироси",
+    "type": "Лицо",
+    "price": 8000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/5/55/KiroshiOptics.png",
+    "capacity": 1,
+    "description": "Имплант дает 4/6/8/10-кратный оптический зум при сканировании",
+    "effect": "Дает −20–44% скорость при обнаружении камерой"
+}
+{
+    "name": "Кироси Оракул",
+    "type": "Лицо",
+    "price": 44000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/d/d7/KiroshiOpticsCombined.png",
+    "capacity": 10,
+    "description": "Увеличивает уровень масштабирования до 8/10 раз при сканировании",
+    "effect": "При сканировании подсвечивается вся техника в радиусе 15-19,5м"
+}
+{
+    "name": "Кироси Кокатрис",
+    "type": "Лицо",
+    "price": 46000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/d/df/Iconic_KiroshiOpticsBare.png",
+    "capacity": 30,
+    "description": "Увеличивает уровень масштабирования до 10 раз при сканировании",
+    "effect": "Увеличивает шанс критического удара на 25–35%"
+}
+{
+    "name": "Кироси Страж",
+    "type": "Лицо",
+    "price": 26000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/6/63/KiroshiOpticsSensor.png",
+    "capacity": 2,
+    "description": "Имплант дает 4/6/8/10-кратный оптический зум при сканировании",
+    "effect": "При сканировании подсвечивается вся техника в радиусе 15м"
+}
+{
+    "name": "Баллистический сопроцессор",
+    "type": "Ладони",
+    "price": 5000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/5/52/PowerGrip.png",
+    "capacity": 2,
+    "description": "Связывает имплант рук пользователя и оптику, обеспечивая отслеживание данных о состоянии в режиме реального времени и предварительный просмотр траектории движения",
+    "effect": "Нету"
+}
+{
+    "name": "Неподвижная сила",
+    "type": "Ладони",
+    "price": 12000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/9/98/GunStabilizer.png",
+    "capacity": 35,
+    "description": "Имплант уменьшает отдачу оружия на 18-35% и разброс пули на 25%",
+    "effect": "Автоматически активирует эффекты для оружия дальнего боя"
+}
+{
+    "name": "Смартлинк",
+    "type": "Ладони",
+    "price": 8000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/8/87/SmartLink.png",
+    "capacity": 4,
+    "description": "Имплант позволяет использовать модуль интеллектуального прицеливания на интеллектуальном оружии",
+    "effect": "Напрямую связывает оптический имплант пользователя с системой оружия, обеспечивая отслеживание данных об оружии в режиме реального времени"
+}
+{
+    "name": "Биомонитор",
+    "type": "Кровеносная система",
+    "price": 8000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/5/53/Biomonitor.png",
+    "capacity": 14,
+    "description": "Имплант автоматически лечит пользователя с помощью экипированного предмета здоровья, когда здоровье падает ниже 50%",
+    "effect": "Увеличивает эффективность предметов лечения на 2-16%"
+}
+{
+    "name": "Второе сердце",
+    "type": "Кровеносная система",
+    "price": 65000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/1/1e/SecondHeart.png",
+    "capacity": 30,
+    "description": "Имплант автоматически полностью восстанавливает здоровье, если оно достигает 0",
+    "effect": "Нету"
+}
+{
+    "name": "Стимулятор адреналина",
+    "type": "Кровеносная система",
+    "price": 5000,
+    "img": "https://static.wikia.nocookie.net/cyberpunk/images/c/c7/StaminaRegenBooster.png",
+    "capacity": 14,
+    "description": "Имплантат восстанавливает 10-25% выносливости после нейтрализации взлома недоброжелателя",
+    "effect": "Рефлексы настроены на +0,1% шанса критического ущерба за очко атрибута"
+}
