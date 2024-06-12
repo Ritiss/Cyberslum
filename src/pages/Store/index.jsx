@@ -15,6 +15,8 @@ export default function Store() {
     const [notification, setNotification] = useState(false)
     const products = useSelector((state) => state.products)
     const dispatch = useDispatch()
+    const [activeProduct, setActiveProduct] = useState(null)
+
     const displayName = {
         frontal_cortex: 'Лобная доля',
         arms: 'Руки',
@@ -66,6 +68,11 @@ export default function Store() {
         }, 2000)
     }
 
+    const hProduct = (product) => {
+        setSelectedProduct(product)
+        setActiveProduct(product.id)
+    }
+
     return (
         <>
             <div className={`${styles.store} ${styles.center}`}>
@@ -82,11 +89,15 @@ export default function Store() {
                         </div>
                         <div className={`${styles.store_bg_list} ${styles.center}`}>
                             {filteredProducts.map(item => {
+                                const isActive = item.id === activeProduct
                                 return (
                                     <div
                                         key={item.name}
                                         className={`${styles.store_bg_list_product} ${styles.center}`}
-                                        onClick={() => setSelectedProduct(item)}
+                                        onClick={() => hProduct(item)}
+                                        style={{
+                                            backgroundImage: isActive ? 'url(/img/back_blue.png)' : 'url(/img/back_pink.png)'
+                                        }}
                                     >
                                         <img src={item.img} alt="" className={styles.object_img} />
                                     </div>

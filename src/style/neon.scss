@@ -29,6 +29,10 @@
     letter-spacing: 2px;
     color: $pink;
 
+    @media only screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+
     &:hover {
         border-color: $blue;
         background-size: 98% 94%;
