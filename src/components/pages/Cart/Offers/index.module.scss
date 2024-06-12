@@ -26,16 +26,31 @@
             }
         }
 
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 16px;
+            padding: 20px;
+            height: 120px;
+            width: 300px;
+        }
+
         h5 {
             margin-bottom: 10px;
             transition: color .3s;
             font-size: 24px;
             color: $pink;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 14px;
+            }
         }
 
         p {
             font-size: 18px;
             color: #fff;
+
+            @media only screen and (max-width: 767px) {
+                font-size: 12px;
+            }
         }
     }
 }

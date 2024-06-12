@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import styles from './index.module.scss'
 import { createTransaction } from '../../services/Transactions'
 import { useSelector } from 'react-redux'
+
 export default function Order() {
     const [reason, setReason] = useState('tver')
     const profile = useSelector((state) => state.userInfo.profile) ?? {}
+    const navigate = useNavigate();
 
     const handleOrder = () => {
         const cart = JSON.parse(localStorage.getItem('cart')) || []
@@ -16,7 +18,9 @@ export default function Order() {
             items: items
         }
 
-        createTransaction(payload)
+        createTransaction(payload).then(() => {
+            navigate('/profile')
+        })
     }
 
     const [isPlaying, setIsPlaying] = useState(() => {
@@ -112,6 +116,7 @@ export default function Order() {
                                             id="cash"
                                             value="cash"
                                             name="payment"
+                                            checked
                                         />
                                         <label htmlFor="cash">Наличными</label>
                                     </div>
